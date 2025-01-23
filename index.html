@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="generator">
+        <h1>Background Generator</h1>
+
+        <div id="colors">
+            <div class="color-picker-container">
+                <input type="color" class="color-picker" value="#ff0000" />
+                <button class="remove-color">Remove</button>
+            </div>
+            <div class="color-picker-container">
+                <input type="color" class="color-picker" value="#0000ff" />
+                <button class="remove-color">Remove</button>
+            </div>
+        </div>
+        <button id="addColor">Add Color</button>
+
+        <select id="gradientType">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+        </select>
+
+        <select id="presets">
+            <option value="">Custom</option>
+            <option value="linear-gradient(to right, #ff7e5f, #feb47b)">Warm Sunset</option>
+            <option value="linear-gradient(to right, #6a11cb, #2575fc)">Purple Bliss</option>
+            <option value="radial-gradient(circle, #ffafbd, #ffc3a0)">Pink Glow</option>
+        </select>
+
+        <button id="generate">Generate</button>
+        <button id="download">Download</button>
+
+        <div class="preview" id="preview"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
